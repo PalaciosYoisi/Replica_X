@@ -1,0 +1,303 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-y: auto;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1265px;
+    margin: 0 auto;
+  
+  }
+  
+  /* ========== MAIN CONTENT ========== */
+  .contenido {
+    flex: 1;
+    max-width: 600px;
+    border-left: 1px solid #2f3336;
+    border-right: 1px solid #2f3336;
+    padding: 0;
+  }
+  
+  .publicacion {
+    padding: 15px;
+    border-bottom: 1px solid #2f3336;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .publicacion img, .publicacion video {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 900px;
+    object-fit: cover;
+  }
+  
+  .perfil {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .perfil img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .perfil p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  /* ========== RIGHT PANEL ========== */
+  .barra-derecha {
+    width: 350px;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: visible; 
+  }
+  
+  .suscripcion {
+    margin-top: 50px;
+    background-color: #16181c;
+    border-radius: 16px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .suscripcion h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .suscripcion p {
+    font-size: 14px;
+    color: #71767b;
+    margin-bottom: 15px;
+  }
+  
+  .boton {
+    background-color: #1d9bf0;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 9999px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: auto;
+  }
+  
+  .boton:hover {
+    background-color: #1a8cd8;
+  }
+  
+  .contenedor-tendencias {
+    background-color: #16181c;
+    border-radius: 16px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .contenedor-tendencias h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .tendencia {
+    padding: 10px 0;
+    border-bottom: 1px solid #2f3336;
+  }
+  
+  .tendencia p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .tendencia p:first-child {
+    font-weight: bold;
+  }
+  
+  .tendencia p:last-child {
+    color: #71767b;
+  }
+  
+  .tendencia a {
+    color: #1d9bf0;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  /* ========== WHO TO FOLLOW ========== */
+.who-to-follow {
+  background-color: #16181c;
+  border-radius: 16px;
+  margin: 15px;
+  padding: 15px;
+}
+
+.who-to-follow h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.user-to-follow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid #2f3336;
+}
+
+.user-info {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+}
+
+.user-info img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info .name {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.user-info .handle {
+  color: #71767b;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.user-info .bio {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.user-info small {
+  color: #71767b;
+  font-size: 12px;
+}
+
+.follow-btn {
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.follow-btn:hover {
+  background: #e6e6e6;
+}
+
+.show-more {
+  display: block;
+  color: #1d9bf0;
+  text-decoration: none;
+  padding: 15px 0 5px;
+  font-size: 14px;
+}
+
+.show-more:hover {
+  text-decoration: underline;
+}
+  
+  /* ========== RESPONSIVE ========== */
+  @media screen and (max-width: 1000px) {
+    .barra-derecha {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .sidebar span {
+      display: none;
+    }
+  
+    .sidebar {
+      width: 80px;
+      padding: 10px;
+      align-items: center;
+    }
+  
+    .nav-links a {
+      justify-content: center;
+    }
+  
+    .post-btn {
+      width: 100%;
+      padding: 12px;
+      font-size: 0;
+      position: fixed;
+      bottom: 80px;
+      left: 10px;
+      right: 10px;
+      background-color: #1d9bf0;
+      border-radius: 999px;
+    }
+  
+    .post-btn::before {
+      content: "+";
+      font-size: 28px;
+      color: #fff;
+    }
+  
+    .user-footer {
+      flex-direction: column;
+    }
+  }
+
+  /* ========== FILTROS ========== */
+.filtros {
+    display: flex;
+    border-bottom: 1px solid #2f3336;
+}
+
+.filtro {
+    flex: 1;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #71767b;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.filtro.active,
+.filtro:hover {
+    color: #fff;
+}
+
+.filtro.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #1d9bf0;
+    border-radius: 2px;
+}
