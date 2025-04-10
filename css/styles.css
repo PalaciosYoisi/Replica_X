@@ -9,6 +9,7 @@
     background-color: #000;
     color: #fff;
     font-family: 'Segoe UI', sans-serif;
+    overflow-y: auto;
   }
   
   /* Layout general */
@@ -341,19 +342,19 @@
   @media screen and (max-width: 768px) {
     .sidebar span {
       display: none;
-    }
+}
   
-    .sidebar {
+  .sidebar {
       width: 80px;
       padding: 10px;
       align-items: center;
     }
   
-    .nav-links a {
+  .nav-links a {
       justify-content: center;
     }
   
-    .post-btn {
+  .post-btn {
       width: 100%;
       padding: 12px;
       font-size: 0;
@@ -365,22 +366,22 @@
       border-radius: 999px;
     }
   
-    .post-btn::before {
+  .post-btn::before {
       content: "+";
       font-size: 28px;
       color: #fff;
     }
   
-    .user-footer {
+  .user-footer {
       flex-direction: column;
     }
   
-    .container {
+  .container {
       flex-direction: column;
     }
   
-    .profile {
+  .profile {
       border: none;
     }
-  }
+}
   
